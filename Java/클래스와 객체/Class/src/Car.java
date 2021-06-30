@@ -1,9 +1,10 @@
 
 public class Car {
-
-	public static void main(String[] args) {
 		
+		//타입 필드명
+		
+		String name;
+		int number;
 
-	}
 
 }
