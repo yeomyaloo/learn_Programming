@@ -1,8 +1,8 @@
 N, M = map(int, input().split())
-board = list()
+lst = list()
 for i in range(N):
-    board.append(input())
-repair = list()
+    lst.append(input())
+lst2 = list()
 
 for i in range(N-7):
     for j in range(M-7):
@@ -11,15 +11,15 @@ for i in range(N-7):
         for k in range(i,i+8):
             for l in range(j,j + 8):
                 if (k + l) % 2 == 0:
-                    if board[k][l] != 'W':
+                    if lst[k][l] != 'W':
                         first_W = first_W+1
-                    if board[k][l] != 'B':
+                    if lst[k][l] != 'B':
                         first_B = first_B + 1
                 else:
-                    if board[k][l] != 'B':
+                    if lst[k][l] != 'B':
                         first_W = first_W+1
-                    if board[k][l] != 'W':
+                    if lst[k][l] != 'W':
                         first_B = first_B + 1
-        repair.append(first_W)
-        repair.append(first_B)
-print(min(repair))
+        lst2.append(first_W)
+        lst2.append(first_B)
+print(min(lst2))
