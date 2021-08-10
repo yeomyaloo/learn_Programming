@@ -4,7 +4,8 @@ lst = []
 for _ in range(n):
     lst.append(input())
 
-ser_lst=set(lst)
+set_lst=set(lst)
+lst = list(set_lst)
 lst.sort()
 lst.sort(key=len)
 
