@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #0출력 1출력 횟수
 
 
@@ -21,6 +22,8 @@ for i in range(T):
 
     print(count_zero, count_one)
 =======
+=======
+>>>>>>> de064b91e7cdacb2c62d82952961dabece9734c5
 t = int(input())
 
 for i in range(t):
@@ -37,4 +40,7 @@ for i in range(t):
         zero = tmp
     print(zero, one)
     
+<<<<<<< HEAD
+>>>>>>> de064b91e7cdacb2c62d82952961dabece9734c5
+=======
 >>>>>>> de064b91e7cdacb2c62d82952961dabece9734c5
