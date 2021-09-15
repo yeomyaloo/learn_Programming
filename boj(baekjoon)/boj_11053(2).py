@@ -1,0 +1,22 @@
+#2156
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+
+a = [0 for i in range(10000)]
+#dp 테이블 초기화
+dp = [0 for i in range(10000)]
+
+for i in range(n):
+    a[i] = int(input())
+
+dp[0] = a[0]
+dp[1] = a[0]+a[1]
+dp[2] = max(a[0]+a[2],a[1]+a[2],dp[1]) #dp[1] == a[0]+a[1]
+
+for i in range(3,n):
+    dp[i] = max(a[i]+dp[i-2], a[i]+a[i-1]+dp[i-3],dp[i-1])
+
+print(max(dp))
