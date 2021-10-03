@@ -14,6 +14,7 @@ for i in range(n):
     else:
         b.append(c)
 a.sort()
+b.sort(reverse = True)
 
 while len(a) != 0:
     if len(a) == 1:
@@ -26,3 +27,4 @@ while len(b) != 0:
     else:
         result += b.pop() * b.pop()
 print(result)
+
