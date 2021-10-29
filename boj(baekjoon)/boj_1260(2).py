@@ -28,7 +28,6 @@ def DFS(graph,v,visited):
 def BFS(graph, v, visited):
     visited = [False] * (n + 1)
     queue = deque([v])
-    print(queue)
     visited[v] = True
     while queue:
         pop = queue.popleft()
